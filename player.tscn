@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq31ug610qs0k"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_5ou8h"]
+[ext_resource type="Texture2D" uid="uid://d06o6r1k37tgx" path="res://monochrome-transparent_packed.png" id="1_iiur6"]
+
+[node name="Player" type="Node2D" node_paths=PackedStringArray("sprite")]
+script = ExtResource("1_5ou8h")
+sprite = NodePath("Sprite")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_iiur6")
+hframes = 49
+vframes = 22
+frame = 25
